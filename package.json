@@ -1,0 +1,52 @@
+{
+  "name": "lolicon",
+  "version": "0.0.1",
+  "description": "Cute React Iconset",
+  "keywords": [
+    "react",
+    "icon"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ichiql/lolicon.git"
+  },
+  "author": "Yamashita, Shinichi",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "format": "pnpm dlx sort-package-json && pnpm dlx sort-compiler-options && pnpm dlx sort-compiler-options -c tsconfig.build.json && pnpm dlx prettier --write './**/*.{ts,tsx}' 'tsconfig*.json'",
+    "lint": "eslint ./src/*",
+    "prepublish": "pnpm build"
+  },
+  "prettier": "@ichiql/prettier-config",
+  "devDependencies": {
+    "@ichiql/prettier-config": "^0.1.1",
+    "@types/react": "^18.2.46",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9",
+    "vite-plugin-no-bundle": "^3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
