@@ -2,7 +2,7 @@
 
 lol, friendl, cute React iconset
 
-[docs]: https://lolicon.ichiql.dev
+[docs]: https://lolicon.nantoka.works
 
 ## Usage
 

@@ -1,6 +1,6 @@
 {
   "name": "lolicon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cute React Iconset",
   "keywords": [
     "react",
@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ichiql/lolicon.git"
+    "url": "git+https://github.com/nantokaworks/lolicon.git"
   },
   "author": "Yamashita, Shinichi",
   "exports": {
@@ -28,9 +28,9 @@
     "lint": "eslint ./src/*",
     "prepublish": "pnpm build"
   },
-  "prettier": "@ichiql/prettier-config",
+  "prettier": "prettier-config-nantokaworks",
   "devDependencies": {
-    "@ichiql/prettier-config": "^0.1.1",
+    "prettier-config-nantokaworks": "^0.1.1",
     "@types/react": "^18.2.46",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.53.0",
@@ -47,6 +47,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

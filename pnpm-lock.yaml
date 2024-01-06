@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
-  '@ichiql/prettier-config':
+  'prettier-config-nantokaworks':
     specifier: ^0.1.1
     version: 0.1.1(prettier@2.8.8)
   '@types/react':
@@ -528,7 +528,7 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@ichiql/prettier-config@0.1.1(prettier@2.8.8):
+  /prettier-config-nantokaworks@0.1.1(prettier@2.8.8):
     resolution: {integrity: sha512-6nBzBqPt6uawuAuhyvDT3M6A+o2hZFB30/ryFGWAGa/rPqyttXNPod9nxB63QzVMlqjrFKD4u59yUAecsxZAnQ==}
     peerDependencies:
       prettier: ^2.2.0
