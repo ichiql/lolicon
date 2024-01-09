@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react'
+import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { defineConfig } from 'vite'
 import noBundlePlugin from 'vite-plugin-no-bundle'
@@ -23,15 +24,7 @@ export default defineConfig({
       fileName: (format, entryName) => `${entryName}.${format === 'es' ? 'mjs' : 'cjs'}`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime'],
-      output: {
-        exports: 'named',
-        globals: {
-          react: 'react',
-          'react-dom': 'react-dom',
-          'react/jsx-runtime': 'react/jsx-runtime',
-        },
-      },
+      plugins: [peerDepsExternal() as Plugin],
     },
   },
 })

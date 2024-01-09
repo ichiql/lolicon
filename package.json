@@ -1,6 +1,6 @@
 {
   "name": "lolicon",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Cute React Iconset",
   "keywords": [
     "react",
@@ -30,14 +30,15 @@
   },
   "prettier": "prettier-config-nantokaworks",
   "devDependencies": {
-    "prettier-config-nantokaworks": "^0.1.1",
     "@types/react": "^18.2.46",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.0",
+    "prettier-config-nantokaworks": "^0.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-visualizer": "^5.12.0",
     "typescript": "^5.0.4",
     "vite": "^4.3.9",
