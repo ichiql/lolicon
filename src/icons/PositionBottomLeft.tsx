@@ -1,9 +1,9 @@
 import Icon, { IconProps } from '../Icon'
 
-export function PositionLeftBottomIcon({ size, className }: IconProps) {
+export function PositionBottomLeftIcon({ size, className }: IconProps) {
   return (
     <Icon
-      label='PositionLeftBottom'
+      label='PositionBottomLeft'
       size={size}
       className={className}
       children={
