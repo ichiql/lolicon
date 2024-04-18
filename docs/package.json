@@ -11,7 +11,7 @@
     "build:panda": "panda codegen --clean",
     "prepare": "panda codegen --clean",
     "typecheck": "tsc",
-    "deploy:pages": "pnpm run build && wrangler pages deploy --project-name lolicon ./public"
+    "pages:deploy": "pnpm run build && wrangler pages deploy --project-name lolicon ./public"
   },
   "dependencies": {
     "@fontsource-variable/murecho": "^5.0.17",
